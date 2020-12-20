@@ -1,0 +1,76 @@
+.container{
+    width: 700rpx;
+}
+
+.cont_title{
+    align-items: center;
+    margin-top: 5rpx;
+    padding: 15rpx 0;
+    color: #373737;
+    width: 250rpx;
+}
+
+
+.cont_title-txt{
+    box-shadow: rgb(221, 19, 28, 0.1) 0 -20rpx 0 inset;
+    padding: 0rpx 10rpx;
+}
+
+.help_icon{
+    margin-left: 10rpx;
+}
+
+.templateCode{
+    align-items: center;
+}
+
+.templateBtn{
+    width: 210rpx !important;
+}
+
+.templateInput{
+    height: 100rpx;
+    margin-right: 10rpx;
+    border-radius: 15rpx;
+    padding: 0 20rpx;
+    background-color: #f6f6f6;
+}
+
+.quickInput{
+    margin-top: 10rpx;
+}
+
+.knowledge{
+    font-size: 30rpx;
+}
+
+.textarea{
+    width: 700rpx;
+    font-size: 32rpx;
+    transition: 0.2s;
+    box-sizing: border-box;
+    margin-top: 15rpx;
+    padding: 20rpx 15rpx;
+    border-radius: 15rpx;
+    background-color: #f6f6f6;
+}
+
+.btns{
+    align-items: center;
+    margin-top: 15rpx;
+    justify-content: space-between;
+}
+
+.btn{
+    align-items: center;
+    color: #414141;
+}
+
+.submit{
+    margin-top: 400rpx;
+    margin-bottom: 25rpx;
+}
+
+.func_btn:active{
+    opacity: 0.1 !important;
+}

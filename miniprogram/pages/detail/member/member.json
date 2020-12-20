@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "excel": "../../../buyGoodsComponents/excel/excel",
+        "head": "./header/header"
+    },
+    "navigationBarTitleText": "订单统计"
+}

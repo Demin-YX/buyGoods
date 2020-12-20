@@ -1,0 +1,22 @@
+page{
+    background-color: #eee;
+}
+
+.scroll{
+    position: absolute;
+    margin-top: 180rpx;
+    margin-bottom: 120rpx;
+    padding: 20rpx 25rpx;
+    box-sizing: border-box;
+    /* background-color: teal; */
+}
+
+.msg_tip{
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20rpx;
+    border-radius: 8rpx;
+    font-size: 24rpx;
+    color: #a3a3a3;
+    position: relative;
+}

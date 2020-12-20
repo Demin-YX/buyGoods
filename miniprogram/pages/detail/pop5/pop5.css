@@ -1,0 +1,59 @@
+.pop5{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60rpx 100rpx;
+    background-color: #f6f6f6;
+    border-radius: 15rpx;
+}
+
+.img{
+    margin-top: 50rpx;
+    width: 170rpx;
+    height: 170rpx;
+}
+
+.title{
+    font-size: 50rpx;
+    color: #414141;
+    font-weight: 800;
+}
+
+/*common-btn*/
+.common-btn {
+    margin-top: 50rpx;
+    width: 700rpx;
+    height: 100rpx;
+    background-color: #414141;
+    color: white;
+    border-radius: 15rpx;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.common-btn:active {
+    background-color: #1b1b1b;
+}
+
+.cancel{
+    background-color: #eee;
+    color: #414141;
+    transition: 0.3s;
+    margin-top: 20rpx;
+}
+
+.cancel:active{
+    background-color: rgb(216, 216, 216);
+}

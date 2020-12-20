@@ -1,0 +1,22 @@
+<view class="container">
+    <view class="cont" s-for="item,index in total">
+        <!-- 左半边 -->
+        <view s-if="{{item.side==0}}" class="left">
+            <image mode="aspectFill" class="head_img" src="{= item.head_img =}" />
+            <view s-if="{{item.type=='txt'}}" class="txt">
+                <text class="msg">{{item.content}}</text>
+                <view class="time">{{item.time}}</view>
+            </view>
+            <image bindtap="preview" data-url="{= item.content =}" mode="aspectFill" s-if="{{item.type=='img'}}" class="cont_img" src="{{item.content}}" />
+        </view>
+        <!-- 右半边 -->
+        <view s-if="{{item.side==1}}" class="right">
+            <image mode="aspectFill" class="head_img" src="{= item.head_img =}" />
+            <view s-if="{{item.type=='txt'}}" class="txt">
+                <text class="msg">{{item.content}}</text>
+                <view class="time">{{item.time}}</view>
+            </view>
+            <image bindtap="preview" data-url="{= item.content =}" mode="aspectFill" s-if="{{item.type=='img'}}" class="cont_img" src="{{item.content}}" />
+        </view>
+    </view>
+</view>

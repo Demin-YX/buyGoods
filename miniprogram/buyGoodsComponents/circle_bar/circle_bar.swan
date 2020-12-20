@@ -1,0 +1,11 @@
+<view class="container" bindtap="tap">
+    <view class="left">
+        <image lazy-load="true" class="img" src="./circle.svg"></image>
+        <view class="txt">{{name}}</view>
+    </view>
+    <view class="right">
+        <view class="right_txt">{{num}}人在圈</view>
+        <image lazy-load="true" class="img1" src="./arrow.svg"></image>
+    </view>
+
+</view>

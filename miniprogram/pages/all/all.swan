@@ -1,0 +1,9 @@
+<view class="container">
+    <image src="./head.svg" class="img"></image>
+    <view class="goodsCards">
+        <goods class="goods" s-for="{{goodsCard_}}" goodsCard="{{item}}"></goods>
+    </view>
+    <view class="notice" s-if="{{goodsCard_.length}}" bindtap="tapMore">{{isMore?'更多拼购':'没有更多啦～'}} <smt-icon s-if="{{isMore}}" size="28rpx"
+            color="#808080" name="arrow-down"></smt-icon>
+    </view>
+</view>

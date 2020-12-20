@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "test": "../../buyGoodsComponents/circle_bar/circle_bar",
+        "official": "./official/official",
+        "common": "./common/common"
+    },
+    "navigationStyle": "custom"
+}

@@ -1,0 +1,71 @@
+.container{
+    width: 700rpx;
+    height: 280rpx;
+    margin: 0 25rpx;
+    margin-top: 25rpx;
+    display: flex;
+    background-color: white;
+    border-radius: 15rpx;
+    box-sizing: border-box;
+    padding: 25rpx;
+}
+
+.img{
+    width: 230rpx;
+    height: 230rpx;
+    border-radius: 10rpx;
+}
+
+.right{
+    margin-left: 25rpx;
+    display: flex;
+    flex-direction: column;
+    width: 400rpx;
+}
+
+.title{
+    max-width: 400rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 36rpx;
+    font-weight: 800;
+}
+
+.tip{
+    max-width: 400rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 28rpx;
+    color: #808080;
+    margin-top: 5rpx;
+}
+
+.btn{
+    width: 200rpx;
+    height: 50rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100rpx;
+    background-color: #317AFF;
+    color: white;
+    align-self: flex-end;
+    margin-top: 80rpx;
+}
+
+.ani_fadeIn {
+    opacity: 0;
+    animation: ani_fadeIn 0.5s 0.5s forwards;
+}
+
+@keyframes ani_fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

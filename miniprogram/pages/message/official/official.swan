@@ -1,0 +1,22 @@
+<view class="container" bindtap="official">
+    <image class="left_img" src="{{message.head_img}}"></image>
+    <view class="txt">
+        <view class="name TXT-MAX-LENGTH-450RPX">
+            {{message.message_name}}
+            <view s-if="{{!message.is_read}}" class="point"></view>
+        </view>
+        <view class="content TXT-MAX-LENGTH-450RPX">{{message.message_content}}</view>
+        <view class="time TXT-MAX-LENGTH-450RPX">{{message.message_recent}}</view>
+    </view>
+    <image class="right_img" src="./arrow.svg"></image>
+</view>
+<view class="line"></view>
+
+<!--
+    message_id: 1,
+    head_img: "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2057588226,2402156864&fm=11&gp=0.jpg", //头像
+    goods_img: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1604918582429&di=39a79906383d77160c128f781746e0e7&imgtype=0&src=http%3A%2F%2Fimages.china.cn%2Fattachement%2Fjpg%2Fsite1000%2F20150506%2F002564ba9eb816b4760d19.jpg",
+    message_content: "官方消息", //消息的内容
+    message_tip: "新版本上线，请删除后重新进入…", //消息的最近提示
+    message_recent: "2020-11-09 15:54", //最近的时间
+}-->

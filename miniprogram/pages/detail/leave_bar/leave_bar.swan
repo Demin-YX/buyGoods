@@ -1,0 +1,5 @@
+<view class="container {{hide?'container_hide':''}}">
+    <image class="img" src="{{img}}"></image>
+    <input class="input" cursor-spacing="20" bindconfirm="send" bindinput="input" value="{= value =}" placeholder="我要留言"/>
+    <view bindtap="send" class="send">发送</view>
+</view>

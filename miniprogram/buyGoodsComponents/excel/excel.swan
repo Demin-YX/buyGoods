@@ -1,0 +1,29 @@
+<view class="container">
+    <view class="title bTop lFlex">
+        <view class="grid_item" style="width: {{700/rows}}rpx" s-for="item,index in title">
+            {{item}}
+        </view>
+    </view>
+    <view class="bTop">
+        <view class="cont lFlex" s-for="contItem,contIndex in cont">
+            <view class="grid_item" s-for="item,index in contItem"
+                style="width: {{700/rows}}rpx; color: #{{item[0]=='¥'?'DD131C':'373737'}}">
+                {{item}}
+            </view>
+        </view>
+    </view>
+    <view class="bottom bTop lFlex">
+        <view class="grid_item" s-for="item,index in bottom"
+            style="width: {{700/rows}}rpx; color: #{{item[0]=='¥'?'DD131C':(item=='总计'?'CCCCCC':'000')}}">
+            {{item}}
+        </view>
+    </view>
+    <view s-if="{{isHost}}" class="remark">
+        <view class="remark_tip">备注名称:{{receive.name}}</view>
+        <view class="remark_tip">收件人:{{receive.person}}</view>
+        <view class="remark_tip">手机号码:{{receive.num}}</view>
+        <view class="remark_tip">收件地址:{{receive.addr}}</view>
+        <view class="copy_remark" bindtap="tapCopy">复制快递信息</view>
+    </view>
+    <image lazy-load="true" catchtap="tap" class="paid_img" s-if="{{paid}}" src="./paid.svg"></image>
+</view>

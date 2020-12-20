@@ -1,0 +1,221 @@
+{
+    "appid": "22845510",
+    "cloudfunctionRoot": "cloudfunctions/",
+    "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+    "compilation-args": {
+        "common": {
+            "useStrict": false
+        },
+        "options": [
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/home/home",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 1,
+                "text": "pages/home/home"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/new/new",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 2,
+                "text": "pages/new/new"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/new/batch/batch",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 3,
+                "text": "pages/new/batch/batch"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/detail/detail",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 4,
+                "text": "pages/detail/detail"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/address/address",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 5,
+                "text": "pages/address/address"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/detail/member/member",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 6,
+                "text": "pages/detail/member/member"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/status/status",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 7,
+                "text": "pages/status/status"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/message/message",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 8,
+                "text": "pages/message/message"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/dialog/dialog",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 9,
+                "text": "pages/dialog/dialog"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/notification/notification",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 10,
+                "text": "pages/notification/notification"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/me/me",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 11,
+                "text": "pages/me/me"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/purchase/purchase",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 12,
+                "text": "pages/purchase/purchase"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/newed/newed",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 13,
+                "text": "pages/newed/newed"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/new/intro/intro",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 14,
+                "text": "pages/new/intro/intro"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/iAmHost/iAmHost",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 15,
+                "text": "pages/iAmHost/iAmHost"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/guide/guide",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 16,
+                "text": "pages/guide/guide"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/new/batch/batch",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 17,
+                "text": "pages/new/batch/batch"
+            }
+        ],
+        "selected": -1
+    },
+    "condition": {},
+    "host": "baiduboxapp",
+    "preview": {
+        "packageId": 1280480
+    },
+    "projectname": "cloud-demo",
+    "publish": {
+        "hideTips": true,
+        "tips": [],
+        "version": "1.0.3"
+    },
+    "setting": {
+        "urlCheck": false
+    },
+    "smartProgramRoot": "miniprogram/",
+    "swan": {
+        "baiduboxapp": {
+            "extensionJsVersion": "1.19.4",
+            "swanJsVersion": "3.230.27-rc"
+        }
+    }
+}

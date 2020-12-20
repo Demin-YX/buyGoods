@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "card": "./card/card",
+        "rect": "./rect/rect",
+        "cont": "./cont/cont"
+    },
+    "navigationBarTitleText": "留言"
+}

@@ -1,0 +1,35 @@
+page {
+    background-color: #eee;
+}
+
+
+.goodsCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 710rpx;
+    margin: 0 20rpx;
+    /* margin-top: 25rpx; */
+}
+
+.goods {
+    margin-bottom: 15rpx;
+}
+
+.notice {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #808080;
+    font-size: 28rpx;
+    margin: 20rpx 0;
+    margin-bottom: 30rpx;
+}
+
+.img{
+    width: 720rpx;
+    height: 310rpx;
+    margin: 20rpx;
+    margin-bottom: 10rpx;
+}

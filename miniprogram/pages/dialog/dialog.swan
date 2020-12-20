@@ -1,0 +1,12 @@
+<view class="container ani_fadeIn">
+    <card bindtapGood="tapGoods" goods="{{goodsCard}}"/>
+    <rect bindconfirm="confirm" bindchoose="choose" />
+    <scroll-view class="scroll">
+        <view class="msg_tip">
+            本留言框仅作为给团长或团员的留言使用，请不要在留言中掺杂不应让对方知道的个人隐私信息，更多请参考《平台规范》，如有违反，请在个人页面截图举报，2-7天内处理。
+        </view>
+
+        <cont left="{= left =}" right="{= right =}"/>
+
+    </scroll-view>
+</view>

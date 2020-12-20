@@ -1,0 +1,14 @@
+<view class="container margin">
+    <view class="head">
+        <view class="title">
+            <image lazy-load="true" class="botice_svg" src="./notice.svg"></image>
+            {{notice.title}}
+        </view>
+        <view class="time">{{notice.time}}</view>
+    </view>
+    <view class="cont">{{notice.cont}}</view>
+    <!-- <view class="bottom">
+        <view class="look_tip">点击查看</view>
+        <image class="arrow_svg" src="./arrow.svg"></image>
+    </view> -->
+</view>

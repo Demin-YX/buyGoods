@@ -1,0 +1,7 @@
+<view class="container">
+    <image class="success_img" src="./success.svg"></image>
+    <center class="success_txt">开团成功!</center>
+    <text class="tip_it">请保存以下团号&分享给好友:</text>
+    <text class="goods_id_txt">{{goods_id}}</text>
+    <button class="copy_btn" bindtap="tap">复制团号</button>
+</view>

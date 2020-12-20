@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "card": "./notification_card/notification_card"
+    },
+    "navigationBarBackgroundColor": "#eee"
+}

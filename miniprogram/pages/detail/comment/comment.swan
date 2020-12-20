@@ -1,0 +1,17 @@
+<view class="container" data-cont="{{comment.cont}}" data-commentid="{{comment._id}}"
+    data-userid="{{comment._author_id}}" bindtap="tapComment" bindlongpress="longPress">
+    <view class="containerContainer">
+        <image catchtap="tapHead" class="head_img" mode="aspectFill" src="{{comment.img}}"></image>
+        <view class="txt">
+            <view class="name" catchtap="tapHead">
+                {{comment.name}}
+            </view>
+            <view class="time">
+                {{comment.time}}
+            </view>
+            <text class="content">
+                {{comment.cont}}
+            </text>
+        </view>
+    </view>
+</view>

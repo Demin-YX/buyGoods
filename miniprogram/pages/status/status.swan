@@ -1,0 +1,31 @@
+<filter module="tool">
+    export default{
+        indexOf: function(arr, address){
+            return arr.indexOf(address)
+        }
+    }
+</filter>
+
+<view class="container">
+    <view class="title1">当前状态</view>
+    <picker mode="selector" range="{{select_range}}" value="{{ tool.indexOf(select_range, address) }}" bindchange="select_change">
+        <view class="pop3_tip logistics margin">
+            <view class="flex">
+                <smt-icon size="45rpx" style="margin-left: 10rpx;" name="follow" />
+                <view class="receiving_info" style="margin-left: 20rpx; color: {{address==''?'#c5c5c5':''}}">
+                    {{address==""?"请选择":address}}
+                </view>
+                <view class="please">选择</view>
+            </view>
+        </view>
+    </picker>
+    <view class="title1">填写订单号</view>
+    <view class="pop3_tip logistics margin input_rect">
+        <view class="flex">
+            <smt-icon size="45rpx" style="margin-left: 10rpx;" name="directory" />
+            <input class="input_num" value="{= input_num =}" bindinput="input" placeholder="请填写运单号" />
+        </view>
+    </view>
+    <view class="common-btn btn margin" bindtap="comp">更新状态</view>
+
+</view>

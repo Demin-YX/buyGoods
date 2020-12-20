@@ -1,0 +1,52 @@
+<view class="container center ani_fadeIn">
+    <view bindtap="intro" class="cont_title flex active-opacity">
+        <view class="cont_title-txt">1.使用团号</view>
+        <smt-icon name="help" class="help_icon" color="#949494" size="30rpx"></smt-icon>
+    </view>
+    <view class="templateCode flex">
+        <input bindinput="inputTemplateCode" placeholder="在此输入团号" class="templateInput" />
+        <view bindtap="analyst" class="templateBtn common-btn">解析</view>
+    </view>
+    <view class="quickInput cont_title flex">
+        <view class="cont_title-txt">2.批量输入</view>
+    </view>
+    <text class="tip knowledge">
+        批量添加格式：【角色名】-【价格/元】-【数量】多个角色请回车分开，如：&#13;&#10;··· 守泽千秋-40.50-10&#13;&#10;··· 空镜十周年-51.60-5
+    </text>
+    <textarea class="textarea"
+    cursor-spacing="200"
+    bindinput="inputTextArea" placeholder="在此输入" value="{= textArea =}" maxlength="300" />
+    <view class="btns flex">
+        <view class="flex btn active-opacity"
+        bindtap="clear">
+            <smt-icon
+            size="35rpx"
+            style="margin-right: 5rpx"
+            color="#414141"
+            name="clear"/>
+            清空
+        </view>
+        <view
+        class="flex btn func_btn"
+        style="opacity: 0.3"
+        bindtap="add_line">
+            <smt-icon
+            size="35rpx"
+            style="margin-right: 5rpx"
+            color="#414141"
+            name="add"/>
+            追加单行模板
+        </view>
+        <view class="flex btn active-opacity"
+        bindtap="checkIn">
+            填入模板
+            <smt-icon
+            size="30rpx"
+            style="margin-left: 5rpx"
+            color="#414141"
+            name="directory"/>
+        </view>
+    </view>
+    <view class="common-btn submit"
+    bindtap="submit">确认</view>
+</view>

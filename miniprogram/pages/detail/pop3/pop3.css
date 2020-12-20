@@ -1,0 +1,178 @@
+.title1 {
+    font-size: 32rpx;
+    color: #A2A2A2;
+}
+
+.input_num {
+    margin-left: 20rpx;
+    padding: 40rpx 0;
+    width: 575rpx;
+}
+
+.pop3_tip {
+    display: flex;
+    height: 100rpx;
+    width: 700rpx;
+    margin-bottom: 20rpx;
+    border-radius: 18rpx;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0 20rpx;
+    background-color: #f6f6f6;
+}
+
+.logistics {
+    justify-content: space-between;
+    margin-top: 15rpx;
+}
+
+.logistics:active {
+    background-color: #f6f6f6 !important;
+}
+
+/* pop3弹窗部分的CSS属性 */
+
+.pop3_tip {
+    display: flex;
+    height: 140rpx;
+    width: 700rpx;
+    margin-bottom: 20rpx;
+    border-radius: 18rpx;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0 20rpx;
+    background-color: #f6f6f6;
+}
+
+
+.pop3_tip--index {
+    font-weight: 900;
+    font-size: 32rpx;
+    color: #CBCBCB;
+    width: 45rpx;
+}
+
+.pop3_tip--txt {
+    margin-left: 20rpx;
+}
+
+.pop3_tip--name {
+    font-size: 32rpx;
+    font-weight: 800;
+    color: #2D2D2D;
+}
+
+.pop3_tip--price {
+    font-size: 40rpx;
+    font-weight: 800;
+    color: #DD131C;
+    letter-spacing: 3rpx;
+}
+
+.pop3_tip--bar {
+    margin-left: 30rpx;
+    position: relative;
+    margin-top: 30rpx;
+}
+
+.pop3_tip--bar_background {
+    background-color: rgb(27, 33, 166, 0.1);
+    width: 290rpx;
+    border-radius: 20rpx;
+    height: 30rpx;
+}
+
+.pop3_tip--bar_data {
+    position: absolute;
+    background-color: #1D65FF;
+    border-radius: 20rpx;
+    height: 30rpx;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+}
+
+.pop3_tip--data_num {
+    position: absolute;
+    right: 0;
+    top: -45rpx;
+    font-size: 32rpx;
+    color: #1D65FF;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.minus_add {
+    display: flex;
+    align-items: center;
+    margin-left: 20rpx;
+    width: 120rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.minus_add image {
+    width: 50rpx;
+    height: 50rpx;
+    padding: 8rpx;
+}
+
+.pop_head {
+    display: flex;
+    width: 700rpx;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pop_money {
+    display: flex;
+    align-items: center;
+}
+
+.logistics {
+    justify-content: space-between;
+}
+
+.logistics:active {
+    background-color: #eee;
+}
+
+.receiving_info {}
+
+
+.flex {
+    display: flex;
+}
+
+/*common-btn*/
+.common-btn {
+    width: 700rpx;
+    height: 100rpx;
+    background-color: #414141;
+    color: white;
+    border-radius: 15rpx;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.common-btn:active {
+    background-color: #1b1b1b;
+}
+
+.TXT-MAX-LENGTH-150RPX {
+    max-width: 150rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.line .pop3_tip--name {
+    text-decoration: line-through;
+    color: #777777;
+}
+
+.line .pop3_tip--price {
+    /* color: #eee; */
+}

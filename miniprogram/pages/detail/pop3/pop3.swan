@@ -1,0 +1,66 @@
+<filter module="tool">
+    export default {
+    sum: function(arr) {
+    var tmp = 0;
+    arr.forEach(e=>{
+    tmp += e.price * e.select;
+    })
+    return tmp;
+    },
+    num_sum: function(arr){
+    var tmp = 0;
+    arr.forEach(e=>{
+    tmp += e.select;
+    })
+    return tmp;
+    }
+    }
+</filter>
+
+<view class="pop3" s-if="{{ pop_active==3 }}">
+    <view class="pop_head">
+        <view class="pop_title">登记买谷(已买/可买)</view>
+        <view class="pop_money">
+            <view style="color: #D3D3D3; font-size: 32rpx;">共计{{tool.num_sum(pop_goods_tip)}}件</view>
+            <view class="TXT-MAX-LENGTH-150RPX"
+                style="color: #DD131C; font-size: 44rpx; margin-left: 10rpx; text-align: right;">
+                ¥{{tool.sum(pop_goods_tip)}}</view>
+        </view>
+    </view>
+    <view style="position: relative;background:#F5F5F5; width: 700rpx;margin: 20rpx 0;height: 2rpx;">
+    </view>
+    <view class="pop3_tip" s-for="item,index in pop_goods_tip">
+        <view class="pop3_tip--index">{{index+1}}.</view>
+        <view class="pop3_tip--txt {{item.num_total-item.num_occupy==0?'line':''}}">
+            <view class="pop3_tip--name TXT-MAX-LENGTH-150RPX">{{item.name}}</view>
+            <view class="pop3_tip--price TXT-MAX-LENGTH-150RPX">¥{{item.num_total-item.num_occupy==0?'售罄':item.price}}</view>
+        </view>
+        <view class="pop3_tip--bar">
+            <view class="pop3_tip--bar_background"></view>
+            <view class="pop3_tip--bar_data" style="width: {{item.select/(item.num_total-item.num_occupy)*290}}rpx">
+                <view class="pop3_tip--data_num" style="right: {{item.select==0?'-50rpx':''}}">
+                    {{item.select}}/{{item.num_total-item.num_occupy}}</view>
+            </view>
+        </view>
+        <view class="minus_add">
+            <image bindtap="minus_btn" data-index="{{index}}" src="./minus.svg"></image>
+            <image bindtap="add_btn" data-index="{{index}}" src="./add.svg"></image>
+        </view>
+    </view>
+    <view class="pop3_tip logistics margin input_rect">
+        <view class="flex">
+            <smt-icon size="45rpx" style="margin-left: 10rpx;" name="personal-center" />
+            <input class="input_num" value="{= input_num =}" bindinput="input" placeholder="请填写你的名字或昵称" />
+        </view>
+    </view>
+    <view class="pop3_tip logistics">
+        <view class="flex">
+            <smt-icon size="45rpx" style="margin-left: 10rpx;" name="follow" />
+            <view class="receiving_info" style="margin-left: 20rpx">
+                {{receiving_person.length==0?'请点击下方⬇️按钮选择/添加地址':receiving_person+'-'+receiving_number+'-'+receiving_address}}
+            </view>
+        </view>
+    </view>
+    <button open-type="chooseAddress" bindchooseaddress="logistics">点击选择地址</button>
+    <view class="common-btn" bindtap="pop3_comp" style="margin-top: 20rpx;">确认登记</view>
+</view>

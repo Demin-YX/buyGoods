@@ -1,0 +1,16 @@
+<view class="container" bindtap="tap">
+    <image lazy-load="true" mode="aspectFill" class="img" src="{{goodsCard.img}}"/>
+    <view class="cont">
+        <view class="txt">{{goodsCard.title}}</view>
+        <view class="info">
+            <view class="info-left">
+                <view class="price">¥{{goodsCard.price}}</view>
+                <view class="avg-price">均价</view>
+            </view>
+            <view class="info-right">
+                {{goodsCard.person}}人在拼
+            </view>
+        </view>
+        <credit credit="{{goodsCard.credit}}"></credit>
+    </view>
+</view>

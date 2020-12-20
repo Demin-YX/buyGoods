@@ -1,0 +1,5 @@
+<view class="container">
+    <input class="input" bindinput="input" value="{= value =}" cursor-spacing="50" bindconfirm="confirm"/>
+    <!-- <image class="img" bindtap="chooseImg" src="./img.svg" /> -->
+    <image class="img" bindtap="confirm" src="./send.svg" />
+</view>

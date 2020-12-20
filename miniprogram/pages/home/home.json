@@ -1,0 +1,8 @@
+{
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "test": "../../buyGoodsComponents/credit/credit",
+        "goods": "../../buyGoodsComponents/goods/goods",
+        "circle": "../../buyGoodsComponents/circle/circle"
+    }
+}

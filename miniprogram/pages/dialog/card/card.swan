@@ -1,0 +1,11 @@
+<view class="container" bindtap="tap">
+    <image mode="aspectFill" class="img" src="{{goods.img}}"></image>
+    <view class="txt">
+        <view class="title">{{goods.title}}</view>
+        <view class="price">
+            <view class="num">¥{{goods.price}}</view>
+            <view class="num_tip">均价</view>
+        </view>
+    </view>
+    <view class="btn">详情</view>
+</view>

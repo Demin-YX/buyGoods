@@ -1,0 +1,93 @@
+.cloud {
+    width: 750rpx;
+    height: 672.7rpx;
+    position: fixed;
+    top: -100rpx;
+}
+
+.bar_height {
+    position: relative;
+    width: 100%;
+}
+
+.search {
+    position: relative;
+    z-index: 100;
+    width: 700rpx;
+    justify-content: space-between;
+    /* margin: 20rpx 0; */
+    padding-top: 10rpx;
+    margin-bottom: 30rpx;
+}
+
+.search_input {
+    height: 70rpx;
+    margin-right: 15rpx;
+    border-radius: 7rpx;
+    box-sizing: border-box;
+    padding: 0 20rpx;
+    background-color: white;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    background-color: #eee;
+    box-sizing: border-box;
+    padding: 10rpx 20rpx;
+    border-radius: 20rpx;
+}
+
+.tag {
+    color: #575757;
+    font-size: 26rpx;
+    margin: 20rpx 0;
+}
+
+.new_txt {
+    color: #3f3d56;
+    height: 40rpx;
+    align-items: center;
+    margin-top: 10rpx;
+    font-weight: 700;
+    /* font-size: 60rpx; */
+}
+
+.new_img {
+    width: 400rpx;
+    height: 285.5rpx;
+}
+
+.new {
+    display: flex;
+    background-color: #fff;
+    border-radius: 20rpx;
+    box-sizing: border-box;
+    padding: 20rpx 30rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.new:active {
+    background-color: #f6f6f6;
+}
+
+.goodsCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.goods {
+    margin-bottom: 15rpx;
+}
+
+.notice{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #808080;
+    font-size: 28rpx;
+    margin: 20rpx 0;
+}

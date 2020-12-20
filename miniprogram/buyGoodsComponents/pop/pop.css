@@ -1,0 +1,39 @@
+.container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 100;
+    transition: 0.4s;
+}
+
+.container-hide{
+    opacity: 0;
+}
+
+.white{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 70vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    z-index: 101;
+    border-radius: 15rpx 15rpx 0 0;
+    transition: 0.3s;
+}
+
+.white-hide{
+    bottom: -80vh;
+}
+
+.scroll{
+    width: 100vw;
+    height: 70vh;
+    box-sizing: border-box;
+    padding: 20rpx;
+}

@@ -1,0 +1,27 @@
+<image class="cloud" src="../../images/cloud.jpg"></image>
+<view class="bar_height" style="height: {{bar_height}}px"></view>
+<view class="search center bflex">
+    <input value="{= value =}" placeholder="搜团号" bindchange="inputing" bindconfirm="input_confirm" class="search_input"/>
+    <smt-icon bindtap="input_confirm" name="magnifying-glass" color="#fff" size="22px" />
+</view>
+<view class="home">
+    <view class="tag">功能</view>
+    <view class="new" bindtap="new">
+        <view class="new_txt flex">
+            <view class="new_txt_launch">发起拼团</view>
+            <smt-icon style="margin-top: " name="arrow" size="12px" />
+        </view>
+        <image class="new_img" src="../../images/new.svg"></image>
+    </view>
+    <view class="tag">热门拼购</view>
+    <view class="goodsCards">
+        <goods class="goods" s-for="{{goodsCard_}}" goodsCard="{{item}}" ></goods>
+    </view>
+    <view class="notice" bindtap="tapMore">全部拼购 <smt-icon size="28rpx" color="#808080" name="arrow"></smt-icon> </view>
+    <!-- <view class="tag">热门谷圈</view>
+    <view class="goodsCards">
+        <circle class="goods" s-for="{{circle_}}" circle="{{item}}" ></circle>
+    </view> -->
+</view>
+
+<login/>

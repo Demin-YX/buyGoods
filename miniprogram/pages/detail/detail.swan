@@ -1,0 +1,111 @@
+<view class="container total_ani ani_fadeIn">
+    <view>
+        <view class="head flex margin">
+            <image bindtap="tapHead" mode="aspectFill" class="head_img" src="{{host_head}}"></image>
+            <view class="head-txt">
+                <view class="head_top flex">
+                    <view bindtap="tapHead" class="host_name">{{host_name}}</view>
+                    <credit credit="{{host_credit}}"></credit>
+                </view>
+                <view class="head_bottom flex">
+                    <view class="time_number flex">
+                        <view class="time">{{goods_time}}</view>
+                        <!-- <view class="number">团号:{{goods_id}}</view> -->
+                    </view>
+                    <view style="display: flex; align-items: center; ">
+                        <view bindtap="collect" style="margin-right: 20rpx" class="share flex active-opacity">
+                            <smt-icon color="#C8C8C8" size="30rpx" style="margin-right: 10rpx" name="collect" />
+                            收藏
+                        </view>
+                        <view bindtap="share" class="share flex active-opacity">
+                            <smt-icon color="#C8C8C8" size="30rpx" style="margin-right: 10rpx" name="share" />
+                            分享
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="margin" style="margin-top: 20rpx;"><text class="title ">{{goods_title}}</text></view>
+        <view class="margin" style="margin-top: 20rpx;margin-bottom: 35rpx;"><text
+                class="description ">{{goods_description}}</text></view>
+        <image lazy-load="true" class="img margin" s-for="item,index in goods_imgs" bindtap="preview"
+            data-index="{{index}}" mode="aspectFill" src="{{item}}"></image>
+        <view class="tip">｜点击缩略图之后初次加载时间较长，敬请理解</view>
+        <view class="tip">｜谷子信息由团长自主上传，有疑问请点击头像私聊团长</view>
+        <view class="occupy" style="height: 30rpx;"></view>
+        <!-- <circle name="{{circle.name}}" num="{{circle.num}}" circle_id="{{circle.circle_id}}"></circle> -->
+    </view>
+
+    <view class="togeInfo flex margin">
+        <view class="person">{{goods_person}}人已拼</view>
+        <view class="status flex">
+            <smt-icon color="#2E2E2E" size="30rpx" style="margin-right: 5rpx" name="spread" />
+            {{goods_status}}
+        </view>
+    </view>
+
+    <scroll-view class="funcBtnsScroll margin" scroll-x>
+        <view class="btnTotal {{isMe?'':'noMe'}}">
+            <view class="funBtnDetail" data-index="0" bindtap="tapFuncBtn">
+                <image class="funBtn" mode="aspectFill" src="./func_img/1.svg">
+                </image>
+                <view class="btnTxt">
+                    <smt-icon class="btnImg" color="#fff" size="18px" name="personal-center"></smt-icon>查看团员
+                </view>
+            </view>
+            <view class="funBtnDetail" data-index="1" bindtap="tapFuncBtn">
+                <image s-if="{{!isMe}}" class="funBtn" mode="aspectFill" src="./func_img/2.svg"></image>
+                <view class="btnTxt" s-if="{{!isMe}}">
+                    <smt-icon class="btnImg" color="#fff" size="18px" name="directory"></smt-icon>查看余量
+                </view>
+            </view>
+            <view class="funBtnDetail" bindtap="tapFuncBtn" data-index="2">
+                <image s-if="{{!isMe}}" class="funBtn" mode="aspectFill" src="./func_img/3.svg"></image>
+                <view class="btnTxt" s-if="{{!isMe}}">
+                    <smt-icon class="btnImg" color="#fff" size="18px" name="add"></smt-icon>参团
+                </view>
+            </view>
+            <view class="funBtnDetail" bindtap="tapFuncBtn" data-index="3">
+                <image s-if="{{isMe}}" class="funBtn" mode="aspectFill" src="./func_img/4.svg"></image>
+                <view class="btnTxt" s-if="{{isMe}}">
+                    <smt-icon class="btnImg" color="#fff" size="18px" name="comment-editor"></smt-icon>
+                    代人参团
+                </view>
+            </view>
+            <view class="funBtnDetail" data-index="4" bindtap="tapFuncBtn">
+                <image s-if="{{isMe}}" class="funBtn" mode="aspectFill" src="./func_img/5.svg"></image>
+                <view class="btnTxt" s-if="{{isMe}}">
+                    <smt-icon class="btnImg" color="#fff" size="18px" name="download"></smt-icon>导出表格
+                </view>
+            </view>
+            <view class="funBtnDetail" data-index="5" bindtap="tapFuncBtn">
+                <image s-if="{{isMe}}" class="funBtn" mode="aspectFill" src="./func_img/6.svg"></image>
+                <view class="btnTxt" s-if="{{isMe}}">
+                    <smt-icon class="btnImg" color="#fff" size="18px" name="refresh"></smt-icon>更新状态
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+
+    <view>
+        <!-- <switch style="margin-left: 25rpx;" bindchange="test_switch" checked="true" /> -->
+    </view>
+
+
+    <view>
+        <dividend />
+        <view class="margin leave_title">留言区({{comment.length}}条)</view>
+        <line />
+        <comment binddelComment="get_comment" binddialog="dialog" s-for="item,index in comment" comment="{{item}}" />
+        <view class="occupy" style="position: relative; width: 100%; height: 140rpx;"></view>
+        <leave bindsend="send_comment" img="{{user_headImg}}" hide="{{hide}}" />
+    </view>
+
+</view>
+
+<pop status="{= pop_status =}">
+    <pop2 pop_active="{{pop_active}}" pop_goods_tip="{{pop_goods_tip}}" bindcomp="pop2_comp"></pop2>
+    <pop3 goods_id="{{goods_id}}" pop_active="{{pop_active}}" pop_goods_tip="{{pop_goods_tip}}" bindcomp="pop3_comp">
+    </pop3>
+    <pop5 pop_active="{{pop_active}}" bindcomp="pop5_comp" bindcancel="hide_pop"></pop5>
+</pop>

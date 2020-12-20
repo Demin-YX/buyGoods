@@ -1,0 +1,5 @@
+<view class="container">
+    <card s-for="itm,idx in goods" goods="{{itm}}"/>
+    <view style="width:100%; height: 25rpx;"></view>
+    <image s-if="{{!goods.length}}" style="width: 750rpx; height: 750rpx; top: 100rpx; opacity: 0.3;" src="../purchase/empty.svg"></image>
+</view>

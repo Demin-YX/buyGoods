@@ -1,0 +1,10 @@
+<view class="container">
+    <image lazy-load="true" mode="aspectFill" class="img" src="{{circle.img}}" />
+    <view class="txt">
+        <view class="name">{{circle.name}}</view>
+        <view class="person">
+            <view class="person-txt">{{circle.person}}人在圈</view>
+            <smt-icon color="#868686" class="arrow" name="arrow" />
+        </view>
+    </view>
+</view>

@@ -1,0 +1,7 @@
+{
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "我的开团",
+    "usingComponents": {
+        "card": "./card/card"
+    }
+}

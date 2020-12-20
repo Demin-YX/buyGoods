@@ -1,0 +1,39 @@
+.container{
+    width: 700rpx;
+    height: 100rpx;
+    margin: 0 25rpx;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 20rpx;
+    justify-content: space-between;
+    border: 2rpx #292929 solid;
+    border-radius: 15rpx;
+    /* transition: 0.3s; */
+}
+
+.container:active{
+    /* border: 2rpx #eee solid; */
+    background-color: #eee;
+}
+
+.img{
+    width: 44rpx;
+    height: 44rpx;
+    margin-right: 15rpx;
+}
+
+.img1{
+    width: 20rpx;
+    height: 20rpx;
+    margin-left: 15rpx;
+}
+
+.right_txt{
+    color: #919191;
+}
+
+.left,.right{
+    display: flex;
+    align-items: center;
+}

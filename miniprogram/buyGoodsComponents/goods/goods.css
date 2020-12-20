@@ -1,0 +1,81 @@
+.container {
+    width: 347rpx;
+    overflow: hidden;
+    border-radius: 15rpx;
+    background-color: #fff;
+    /* border: #eee 2rpx solid; */
+}
+
+.container:active {
+    background-color: #f6f6f6;
+}
+
+.img::after {
+    content: '加载中…';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(204, 204, 204);
+    z-index: -1;
+}
+
+.img {
+    position: relative;
+    width: 347rpx;
+    height: 275rpx;
+    z-index: 100;
+    background-color: #f6f6f6;
+}
+
+.img_board {
+    width: 347rpx;
+    height: 275rpx;
+}
+
+.cont {
+    padding: 0 15rpx;
+    padding-bottom: 20rpx;
+    padding-bottom: 15rpx;
+}
+
+.txt {
+    max-width: 350rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 32rpx;
+    font-size: 700;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rpx;
+    margin-bottom: 5rpx;
+}
+
+.info-left {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    color: #D91212;
+    font-size: 35rpx;
+    font-weight: 900;
+    /* letter-spacing: 3rpx; */
+    margin-left: 3rpx;
+}
+
+.avg-price {
+    color: #B1B1B1;
+    font-size: 24rpx;
+    margin-left: 5rpx;
+}
+
+.info-right {
+    color: #B1B1B1;
+    font-size: 24rpx;
+}

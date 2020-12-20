@@ -1,0 +1,121 @@
+<filter module="tool">
+    export default {
+        bottom:function(goods){
+            var num = 0;
+            var money = 0;
+            for(var i=0; i< goods.length; i++){
+                num+=goods[i].num;
+                money+=goods[i].price;
+            }
+            return ['总计',num,money];
+        },
+        cont: function(goods){
+            var tmp = [];
+            for(var i=0; i< goods.length; i++){
+                tmp.push([
+                    goods[i].name,
+                    '×'+goods[i].num,
+                    '¥'+goods[i].price
+                ])
+            }
+            return tmp;
+        },
+
+        simple_bottom:function(goods){
+            var num = 0;
+            var money = 0;
+            for(var i=0; i< goods.length; i++){
+                num+=goods[i].num;
+            }
+            return ['总计',num];
+        },
+
+        simple_cont: function(goods){
+            var tmp = [];
+            for(var i=0; i< goods.length; i++){
+                tmp.push([
+                    goods[i].name,
+                    '×'+goods[i].num
+                ])
+            }
+            return tmp;
+        },
+        total_paid: function(goods, index) {
+            var tmp = [0, 0];
+            for (var i = 0; i < goods.length; i++) {
+                if (goods[i].isPaied) {
+                    tmp[1] += 1;
+                    for (var j = 0; j < goods[i].goods.length; j++) { tmp[0] += goods[i].goods[j].price * goods[i].goods[j].num }
+                }
+            }
+            tmp[0] = tmp[0].toFixed(2);
+            return tmp[index];
+        },
+        total_unpaid: function(goods, index) {
+            var tmp = [0, 0];
+            for (var i = 0; i < goods.length; i++) {
+                if (!goods[i].isPaied) {
+                    tmp[1] += 1;
+                    for (var j = 0; j < goods[i].goods.length; j++) { tmp[0] += goods[i].goods[j].price * goods[i].goods[j].num }
+                }
+            }
+            tmp[0] = tmp[0].toFixed(2);
+            return tmp[index];
+        },
+    }
+</filter>
+
+<view class="container total_ani ani_fadeIn">
+    <image s-if="{{!person.length}}" style="width: 750rpx; height: 750rpx; top: 100rpx; opacity: 0.3;" src="../../purchase/empty.svg"></image>
+    <view s-if="{{person.length}}" class="title1">成员列表</view>
+    <line s-if="{{person.length}}"></line>
+    <view s-if="{{person.length}}" class="person" s-for="item,index in person">
+
+        <head bindminepay="MinePay" isHost="{{isHost}}" isMine="{{item.user_id==user_id}}" bindpay="pay" index="{{index}}" item="{{item}}"/>
+
+        <excel
+        isMine="{{item.user_id==user_id}}"
+        s-if="{{isHost}}"
+        isHost="{{isHost}}"
+        rows="{{3}}"
+        title="{{['谷', '数量', '金额']}}"
+        cont="{{tool.cont(item.goods)}}"
+        bottom="{{tool.bottom(item.goods)}}"
+        receive="{{item.receive}}"
+        paid="{{item.isPaied}}"/>
+
+        <excel
+        isMine="{{item.user_id==user_id}}"
+        s-if="{{!isHost}}"
+        isHost="{{isHost}}"
+        rows="{{2}}"
+        title="{{['谷', '数量']}}"
+        cont="{{tool.simple_cont(item.goods)}}"
+        bottom="{{tool.simple_bottom(item.goods)}}"
+        receive="{{item.receive}}"
+        paid="{{item.isPaied}}"/>
+
+    </view>
+
+    <line/>
+
+    <view s-if="{{person.length}}" class="paid_info margin">
+        <view class="paid_btn">
+            已付款: <view s-if="{{isHost}}" class="btn_money">¥{{tool.total_paid(person, 0)}}</view> {{tool.total_paid(person, 1)}}人
+        </view>
+        <view class="unpaid_btn">
+            未付款: <view s-if="{{isHost}}" class="btn_money">¥{{tool.total_unpaid(person, 0)}}</view> {{tool.total_unpaid(person, 1)}}人
+        </view>
+    </view>
+
+    <view class="occupy" style="height: 30rpx"></view>
+
+    <!-- <line/>
+    <line/>
+    <line/> -->
+    <!-- <line/> -->
+    <!-- <view class="title1">测试模块</view>
+    <view class="margin tip">{{isHost?'团长视角':'团员视角'}}</view>
+    <switch class="margin" checked="true" bindchange="switchChange"> -->
+
+</view>

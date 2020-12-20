@@ -1,0 +1,52 @@
+.title1{
+    font-size: 32rpx;
+    color: #A2A2A2;
+}
+
+.flex{
+    justify-content: space-between;
+    width: 660rpx;
+}
+
+.pop3_tip{
+    display: flex;
+    height: 100rpx;
+    width: 700rpx;
+    margin-bottom: 20rpx;
+    border-radius: 18rpx;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0 20rpx;
+    background-color: #f6f6f6;
+}
+
+.logistics{
+    justify-content: space-between;
+    margin-top: 15rpx;
+}
+
+.logistics:active{
+    background-color: #eee;
+}
+
+.input_rect:active{
+    background-color: #f6f6f6;
+}
+
+.receiving_info{
+    width: 490rpx;
+}
+
+.please{
+    margin-right: 20rpx;
+    color: #c5c5c5;
+}
+
+.input_num{
+    margin-left: 20rpx;
+}
+
+.btn{
+    position: absolute;
+    bottom: 100rpx;
+}

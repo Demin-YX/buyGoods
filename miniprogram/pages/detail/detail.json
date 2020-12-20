@@ -1,0 +1,11 @@
+{
+    "usingComponents": {
+        "credit": "../../buyGoodsComponents/credit/credit",
+        "circle": "../../buyGoodsComponents/circle_bar/circle_bar",
+        "leave": "./leave_bar/leave_bar",
+        "comment": "./comment/comment",
+        "pop2": "./pop2/pop2",
+        "pop3": "./pop3/pop3",
+        "pop5": "./pop5/pop5"
+    }
+}

@@ -1,0 +1,132 @@
+.active:active {
+    opacity: 0.5;
+}
+
+.container {
+    width: 700rpx;
+    margin: 25rpx 25rpx 0;
+    background-color: white;
+    border-radius: 15rpx;
+    box-sizing: border-box;
+    padding: 30rpx 25rpx;
+    position: relative;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.goods_img {
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 10rpx;
+}
+
+.icon_txt image {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.head_right {
+    width: 500rpx;
+}
+
+.name_price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 36rpx;
+    font-weight: 800;
+    color: #4D4D4D;
+}
+
+.price {
+    color: #DF141D;
+    /* font-size: 40rpx; */
+}
+
+.goods_name {
+    display: flex;
+    color: #A1A1A1;
+    font-size: 28rpx;
+    max-width: 500rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 5rpx;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    margin-top: 5rpx;
+}
+
+.icon_txt {
+    display: flex;
+    align-items: center;
+}
+
+.icon--txt {
+    font-size: 28rpx;
+    color: #A1A1A1;
+    margin-left: 5rpx;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20rpx;
+}
+
+.user_img {
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 50%;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user_name {
+    color: #4D4D4D;
+    font-size: 24rpx;
+    margin-left: 10rpx;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+}
+
+.copy,
+.look {
+    width: 180rpx;
+    height: 50rpx;
+    background-color: #DF141D;
+    border-radius: 100rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28rpx;
+    margin-left: 15rpx;
+}
+
+.copy {
+    color: #1890FF;
+    background-color: rgb(24, 144, 255, 0.1);
+}
+
+.paid_img{
+    position: absolute;
+    width: 150rpx;
+    height: 150rpx;
+    top: 50rpx;
+    left: 200rpx;
+    transform: rotate(15deg);
+    opacity: 0.5;
+}

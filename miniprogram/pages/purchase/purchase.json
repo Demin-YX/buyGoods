@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "order": "../../buyGoodsComponents/order/order"
+    },
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "购买记录"
+}

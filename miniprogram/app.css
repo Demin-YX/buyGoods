@@ -1,0 +1,197 @@
+.center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*animation*/
+.ani_fadeIn {
+    opacity: 0;
+    animation: ani_fadeIn 0.5s 0.5s forwards;
+}
+
+@keyframes ani_fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.active-opacity{
+    opacity: 1;
+}
+
+.active-opacity:active {
+    opacity: 0.5;
+}
+
+* {
+    font-size: 30rpx;
+}
+
+.padding {
+    padding: 0 25rpx;
+}
+
+.margin {
+    margin: 0 25rpx;
+}
+
+smt-icon {
+    display: flex;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.bflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*左右居中*/
+.lr_center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*common-btn*/
+.common-btn {
+    width: 700rpx;
+    height: 100rpx;
+    background-color: #414141;
+    color: white;
+    border-radius: 15rpx;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.common-btn:active {
+    background-color: #1b1b1b;
+}
+
+.common-back {
+    width: 700rpx;
+    height: 100rpx;
+    background-color: #f6f6f6;
+    color: #A3A3A3;
+    border-radius: 15rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*border-radius*/
+.border_radius--15rpx {
+    border-radius: 15rpx;
+}
+
+.border_radius--10rpx {
+    border-radius: 10rpx;
+}
+
+/*
+文字控制长度
+*/
+
+.TXT-MAX-LENGTH-150RPX {
+    max-width: 150rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.TXT-MAX-LENGTH-200RPX {
+    max-width: 200rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.TXT-MAX-LENGTH-250RPX {
+    max-width: 250rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.TXT-MAX-LENGTH-300RPX {
+    max-width: 300rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.TXT-MAX-LENGTH-350RPX {
+    max-width: 350rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.TXT-MAX-LENGTH-400RPX {
+    max-width: 400rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.TXT-MAX-LENGTH-450RPX {
+    max-width: 450rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.TXT-MAX-LENGTH-500RPX {
+    max-width: 500rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.TXT-MAX-LENGTH-550RPX {
+    max-width: 550rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.MARGIN-TOP-200RPX {
+    margin-top: 200rpx;
+}
+
+/*Tip*/
+.tip {
+    color: #D3D3D3;
+    font-size: 25rpx;
+    margin-top: 5rpx;
+    padding-left: 10rpx;
+    border-left: #eee 5rpx solid;
+    display: flex;
+    align-items: center;
+}
+
+/*占位*/
+.occupy{
+    position: relative;
+    width: 100%;
+}
+
+/*小标题*/
+.title1{
+    color: #373737;
+    font-size: 36rpx;
+    margin: 0 25rpx;
+    margin-top: 25rpx;
+}

@@ -1,0 +1,20 @@
+<view class="container">
+    <view class="head">
+        <image mode="aspectFill" class="head_img" src="{{user.headImg}}"></image>
+        <view class="right">
+            <view class="head_top">
+                <view class="name">{{user.name}}</view>
+                <credit host="个人" credit="{{user.credit}}" />
+            </view>
+        </view>
+    </view>
+    <btns />
+    <!-- <dividend /> -->
+    <view class="title1">收藏</view>
+    <view class="tip" style="margin-left: 28rpx">仅本地缓存存储,小程序被释放后自动清除收藏</view>
+    <card s-for="item,idx in goods" img="{{item.img}}" title="{{item.title}}" cont="{{item.cont}}"
+        goods_id="{{item.goods_id}}"></card>
+    <view s-if="{{goods.length}}" class="clear" bindtap="clear">一键清除收藏 <smt-icon name="clear" size="34rpx" color="#AEAEAE"></smt-icon> </view>
+    <image s-if="{{!goods.length}}" class="empty" src="./empty.svg"></image>
+</view>
+<login/>

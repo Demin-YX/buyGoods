@@ -1,0 +1,8 @@
+<view s-if="{{isIn}}" catch:touchmove="move" bindtap="tapMask" class="container {{pop?'':'container-hide'}}">
+</view>
+<view catchtouchmove="move" s-if="{{isIn}}" class="white {{pop?'':'white-hide'}}">
+    <scroll-view class="scroll"
+    scroll-y="true">
+        <slot></slot>
+    </scroll-view>
+</view>

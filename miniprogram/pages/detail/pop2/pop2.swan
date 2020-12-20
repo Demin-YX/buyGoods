@@ -1,0 +1,20 @@
+<view class="pop2" s-if="{{ pop_active==2 }}">
+    <view class="pop_title">余量(已占/总量)</view>
+    <view style="position: relative;background:#F5F5F5; width: 700rpx;margin: 20rpx 0;height: 2rpx;">
+    </view>
+    <view class="pop2_tip" s-for="item,index in pop_goods_tip">
+        <view class="pop2_tip--index">{{index+1}}.</view>
+        <view class="pop2_tip--txt">
+            <view class="pop2_tip--name TXT-MAX-LENGTH-150RPX">{{item.name}}</view>
+            <view class="pop2_tip--price TXT-MAX-LENGTH-150RPX">¥{{item.price}}</view>
+        </view>
+        <view class="pop2_tip--bar">
+            <view class="pop2_tip--bar_background"></view>
+            <view class="pop2_tip--bar_data" style="width: {{item.num_occupy/item.num_total*440}}rpx">
+                <view class="pop2_tip--data_num" style="right: {{item.num_occupy==0?'-80rpx':''}}">
+                    {{item.num_occupy}}/{{item.num_total}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="common-btn" bindtap="pop2_comp" style="margin-top: 50rpx;">完成</view>
+</view>

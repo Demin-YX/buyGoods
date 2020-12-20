@@ -1,0 +1,53 @@
+.head_img {
+    width: 750rpx;
+    height: 360.5rpx;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.clear-btn {
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clear-txt {
+    color: white;
+    font-size: 36rpx;
+}
+
+.clear-img {
+    width: 36rpx;
+    height: 36rpx;
+    padding: 10rpx;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin-left: 10rpx;
+}
+
+.msg_container{
+    width: 700rpx;
+    background-color: white;
+    margin: 0 20rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20rpx 0;
+    overflow: hidden;
+    box-shadow: 2rpx 2rpx 12px 0 rgba(0,0,0,0.19);
+    border-radius: 22rpx;
+    margin-bottom: 20rpx;
+}
+
+.bottom_tip{
+    width: 750rpx;
+    text-align: center;
+    font-size: 24rpx;
+    color: #AAAAAA;
+    margin: 50rpx 0;
+}

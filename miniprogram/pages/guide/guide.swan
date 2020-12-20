@@ -1,0 +1,3 @@
+<view class="container">
+    <image lazy-load="{{true}}" class="img" s-for="item,index in imgs" mode="aspectFill" src="{{item}}"></image>
+</view>

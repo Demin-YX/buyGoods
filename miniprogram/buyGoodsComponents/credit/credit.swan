@@ -1,0 +1,29 @@
+<view s-if="{{credit=='极好'}}" class="container container-0">
+    <smt-icon class="icon" color="rgb(255, 103, 0)" name="public-security" />
+    <view class="txt" style="color: rgb(255, 103, 0)">
+        {{host}}信用｜{{credit}}
+    </view>
+</view>
+
+<view s-if="{{credit=='优秀'}}" class="container container-1">
+    <smt-icon class="icon" color="rgb(0, 183, 76)" name="public-security" />
+    <view class="txt" style="color: rgb(0, 183, 76)">
+        {{host}}信用｜{{credit}}
+    </view>
+</view>
+
+<view s-if="{{credit=='良好'}}" class="container container-2">
+    <smt-icon class="icon" color="rgb(0, 202, 250)" name="public-security" />
+    <view class="txt" style="color: rgb(0, 202, 250)">
+        {{host}}信用｜{{credit}}
+    </view>
+</view>
+
+<view s-if="{{credit=='一般'}}" class="container container-3">
+    <smt-icon class="icon" color="rgb(127, 126, 126)" name="public-security" />
+    <view class="txt" style="color: rgb(127, 126, 126)">
+        {{host}}信用｜{{credit}}
+    </view>
+</view>
+
+

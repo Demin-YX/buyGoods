@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "credit": "../../buyGoodsComponents/credit/credit",
+        "btns": "./btns/btns",
+        "card": "./card/card"
+    }
+}

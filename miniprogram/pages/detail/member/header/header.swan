@@ -1,0 +1,29 @@
+<view class="header flex margin">
+    <image lazy-load="true" bindtap="launchMsg" class="head_img" src="{{item.head_img}}" />
+    <view class="txt">
+        <view class="name_credit flex">
+            <view class="name TXT-MAX-LENGTH-300RPX">{{item.name}}</view>
+            <view class="credit flex"
+                style="background:#{{item.credit>4?'FF6F22':(item.credit>3?'F7D600':(item.credit>2?'49CEF9':(item.credit>1?'8A8989':(000000))))}}">
+                <image class="star_img" src="./star.svg"></image>
+                <view class="credit_txt">{{item.credit}}</view>
+            </view>
+        </view>
+        <view s-if="{{isHost}}" class="tip_cont">
+            团员标记为：{{item.isMemberPaied?'已':'未'}}付款
+        </view>
+    </view>
+    <view s-if="{{isHost}}" bindtap="tapPay" class="func_btn flex active-opacity"
+        style="background:#{{item.isPaied?'EEEEEE':'317AFF'}};color:{{item.isPaied?'':'#fff'}}">
+
+        标记为{{item.isPaied?'未':'已'}}付款
+    </view>
+    <view s-if="{{isMine&&!isHost}}" class="isMine">
+        我的订单
+    </view>
+    <view s-if="{{isMine&&!isHost&&!item.isMemberPaied}}" class="MinePaid" bindtap="MinePay">标记已付款</view>
+    <view s-if="{{isMine&&!isHost&&item.isMemberPaied}}" class="MineUnPaid" bindtap="MinePay">已付款</view>
+    <view s-if="{{!isHost&&!isMine}}" style="width: 242rpx;"></view>
+
+
+</view>

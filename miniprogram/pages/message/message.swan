@@ -1,0 +1,16 @@
+<view class="container">
+    <image class="head_img" src="./img.svg"></image>
+    <view class="clear-btn" style="margin-top: {{bar_height}}px;">
+        <view class="clear-txt">消息({{messages.length}})</view>
+        <!-- <image src="./clear.svg" class="clear-img"></image> -->
+    </view>
+    <view class="msg_container">
+        <official message="{{official}}" />
+        <view s-for="msg in messages">
+            <common message="{= msg =}" />
+        </view>
+    </view>
+    <view class="bottom_tip">/* 听说友善的交流能更快建立和谐的关系哦～ */</view>
+</view>
+
+<login/>

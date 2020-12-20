@@ -1,0 +1,99 @@
+<view class="head flex margin total_ani ani_fadeIn">
+    <view class="head-left flex">
+        <view style="position: relative;width: 100rpx;height: 100rpx;">
+            <image mode="aspectFill" class="head_img" src="{{head_img}}"></image>
+        </view>
+        <view class="left-txt">
+            <view class="name TXT-MAX-LENGTH-350RPX">{{name}}</view>
+            <view class="time">{{time}}</view>
+        </view>
+    </view>
+    <view class="head-right active-opacity">
+        <smt-icon name="help" color="#949494" style="width: 32rpx; height: 32rpx;" />
+        <view bindtap="navi_intro" class="guide-txt">如何开团</view>
+    </view>
+</view>
+
+<view class="input_txt margin total_ani total_ani1 ani_fadeIn">
+    <input placeholder="团名" placeholder-class="toge_name-placeholder" class="toge_name" bindinput="input_togeName" />
+    <textarea bindinput="textConfirm" maxlength="-1" placeholder="在此写下此团的介绍吧～" class="toge_tip" />
+    <!-- <view class="edit_circle">
+        <smt-icon color="#999999" name="spread" size="40rpx" />
+        <text style="margin-left: 10rpx;">#编辑圈子#</text>
+    </view> -->
+</view>
+<dividend class="ani_fadeIn"/>
+<view class="image total_ani total_ani2 ani_fadeIn">
+    <view class="edit_title margin flex" style="align-items: center;">
+        <smt-icon name="picture"/>
+        <view>上传图片</view>
+    </view>
+    <view class="tip margin">至多9张，请尽量选择1M以下图片，单张上限10M</view>
+    <smt-image-uploader
+    class="uploader"
+    theme="large"
+    showPreview="{{false}}"
+    picture-list="{{images_list}}"
+    bind:chooseimage = "choose"/>
+</view>
+<dividend class="ani_fadeIn"/>
+
+<view class="detail margin total_ani total_ani3 ani_fadeIn">
+    <text class="edit_title">谷子(Goods)列表</text>
+    <view class="tip">长按可以对列表Tip进行删除、移动、重置</view>
+    <view class="quickCheck" bindtap="batch">
+        <view class="bflex">
+            <smt-icon name="download"/>
+            <view>使用团号或智能解析导入</view>
+        </view>
+        <smt-icon name="arrow" size="30rpx"/>
+    </view>
+    <view class="detailCard" s-for="item,index in good_detail" >
+        <view class="checkIndex">{{index+1}}.</view>
+        <view class="detailName TXT-MAX-LENGTH-150RPX" data-index="{{index}}" bindlongpress="goodLongPress"
+        bindtap="tapGoodInfo">{{ item.name }}</view>
+        <view class="detailPrice TXT-MAX-LENGTH-200RPX" data-index="{{index}}" bindlongpress="goodLongPress"
+        bindtap="tapGoodInfo">¥{{ item.price }}</view>
+        <view class="numPick">
+            <image bindtap="minus" bindlongpress="longPress" data-index="{{index}}" src="./minus.svg"></image>
+            <input type="number" bindchange="input_num" data-index="{{index}}" value="{= item.num =}"/>
+            <image bindtap="plus" bindlongpress="longPressPlus" data-index="{{index}}" src="./plus.svg"></image>
+        </view>
+    </view>
+    <view class="detailCard add_btn" bindtap="addGood" style="justify-content: center">
+            <smt-icon name="add" style="margin-right: 5rpx; padding: 25rpx 0;" color="#373737" size="36rpx" />
+            添加新项
+    </view>
+</view>
+
+<view class="submit common-btn margin total_ani total_ani4 ani_fadeIn" bindtap="submit">
+    确认开团
+</view>
+
+<pop status="{= pop_status =}">
+    <view class="editGoods">
+        <text class="editGoods--title">请编辑</text>
+        <view class="edit_name">
+            <smt-icon color="#DADADA" class="edit_name--icon" name="classification" />
+            <view class="edit_name--title">谷</view>
+            <input class="edit_name--input" placeholder-class="input_placeholder"
+            value="{= goods =}"
+            bindconfirm="pop_confirm"
+            bindinput="input_goods"
+            cursor-spacing="200"
+            placeholder="请输入"/>
+        </view>
+        <view class="edit_name border--bottom">
+            <smt-icon color="#DADADA" class="edit_name--icon" name="recharge" />
+            <view class="edit_name--title">金额</view>
+            <input class="edit_name--input" placeholder-class="input_placeholder"
+            value="{= money =}"
+            bindconfirm="pop_confirm"
+            bindinput="input_money"
+            placeholder="单位/元"
+            cursor-spacing="140"
+            type="digit"/>
+        </view>
+        <view bindtap="pop_confirm" class="edit_confirm common-btn bflex">确认</view>
+    </view>
+</pop>

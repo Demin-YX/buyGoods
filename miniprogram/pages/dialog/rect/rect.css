@@ -1,0 +1,28 @@
+.container{
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    background-color: #414141;
+    width: 100%;
+    height: 120rpx;
+    display: flex;
+    padding: 0 35rpx;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input{
+    width: 660rpx;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20rpx 35rpx;
+    height: 75rpx;
+    border-radius: 100rpx;
+}
+
+.img{
+    width: 52rpx;
+    height: 44rpx;
+    margin-left: 25rpx;
+}

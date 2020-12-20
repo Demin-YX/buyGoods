@@ -1,0 +1,6 @@
+<view class="container">
+    <!-- <view class="title1">2020</view> -->
+    <order bindcopy="copy" s-for="item,index in orders" order="{{item}}"/>
+    <image style="width: 750rpx; height: 750rpx; top: 100rpx; opacity: 0.3;" s-if="{{orders.length==0}}" src="./empty.svg"></image>
+    <view style="height: 25rpx; width: 100%;"></view>
+</view>

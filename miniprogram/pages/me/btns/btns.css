@@ -1,0 +1,40 @@
+.container{
+    width: 700rpx;
+    background-color: #F6F6F6;
+    border-radius: 15rpx;
+    margin: 30rpx 25rpx;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30rpx;
+    justify-content: space-between;
+}
+
+.img{
+    width: 100rpx;
+    height: 100rpx;
+    margin-right: 2rpx;
+}
+
+.txt{
+    font-size: 24rpx;
+    color: #8E8E8E;
+    margin-top: 15rpx;
+    line-height: 24rpx;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120rpx;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background-color: rgba(0,0,0,0);
+}
+
+.btn::after{
+    border: none;
+}

@@ -1,0 +1,12 @@
+<view class="container ani_fadeIn" bindtap="tap">
+    <image class="img" mode="aspectFill" src="{{goods.img}}"></image>
+    <view class="right">
+        <view class="txt">
+            <view class="title">{{goods.title}}</view>
+            <view class="tip">{{goods.tip}}</view>
+        </view>
+        <view class="btn">
+            查看拼团
+        </view>
+    </view>
+</view>

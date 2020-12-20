@@ -1,0 +1,8 @@
+<view class="pop5" s-if="{{ pop_active==5 }}">
+    <view class="tip">
+        <view class="title">下载Excel</view>
+        <image class="img" src="./down.svg"></image>
+    </view>
+    <view class="common-btn" bindtap="confirm">确认下载</view>
+    <view class="common-btn cancel" bindtap="cancel">取消</view>
+</view>

@@ -1,0 +1,61 @@
+<filter module="tool">
+    export default {
+        concat: function(obj){
+            var tmp = "";
+            for(var i = 0; i < obj.length; i++){
+                tmp += obj[i].title + "×" + obj[i].num + ";"
+            }
+            return tmp;
+        }
+    }
+</filter>
+
+<view class="container">
+    <view class="head" bindtap="tapGoods">
+        <image lazy-load="true" class="goods_img" mode="aspectFill" src="{{order.img}}"></image>
+        <view class="head_right">
+            <view class="name_price">
+                <view class="title">
+                    {{order.title}}
+                </view>
+                <view class="price">
+                    ¥{{order.price}}
+                </view>
+            </view>
+            <view class="goods_name">
+                {{tool.concat(order.goods)}}
+            </view>
+            <view class="status">
+                <view class="icon_txt">
+                    <image lazy-load="true" src="./status.svg" />
+                    <view class="icon--txt">
+                        {{order.status}}
+                    </view>
+                </view>
+                <view style="margin-left: 10rpx;" s-if="{{order.waybill}}" class="icon_txt">
+                    <image lazy-load="true" src="./number.svg" />
+                    <view class="icon--txt">
+                        {{order.waybill}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="user">
+            <image lazy-load="true" mode="aspectFill" class="user_img" src="{{order.user.img}}" />
+            <view class="user_name">
+                {{order.user.name}}
+            </view>
+        </view>
+        <view class="btns">
+            <view class="copy active" bindtap="copy" s-if="{{order.waybill}}">
+                复制单号
+            </view>
+            <view bindtap="tapGoods" class="look active">
+                查看拼团
+            </view>
+        </view>
+    </view>
+    <image s-if="{{order.minePaid}}" class="paid_img" src="./paid.svg"></image>
+</view>

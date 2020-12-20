@@ -1,0 +1,4 @@
+<view class="container">
+    <card s-for="item,index in notices" notice="{{item}}" />
+    <view class="occupy" style="height: 25rpx"></view>
+</view>

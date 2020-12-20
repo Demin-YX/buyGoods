@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 133, 255, 0.1);
+    width: 190rpx;
+    justify-content: center;
+    padding: 3rpx 0;
+    border-radius: 3rpx;
+    transform: translateX(-5rpx);
+}
+
+.container-0 {
+    background-color: rgb(255, 103, 0, 0.1);
+}
+
+.container-1 {
+    background-color: rgb(0, 183, 76, 0.1);
+}
+
+.container-2 {
+    background-color: rgb(0, 202, 250, 0.1);
+}
+
+.container-3 {
+    background-color: rgb(127, 126, 126, 0.1);
+}
+
+.icon {
+    width: 32rpx;
+    height: 32rpx;
+}
+
+.txt {
+    font-size: 20rpx;
+    color: #0085ff;
+    color: rgb(0, 150, 36);
+    color: rgb(250, 34, 75);
+    color: rgb(255, 158, 42);
+    color: rgb(0, 98, 249);
+    font-weight: 700;
+    margin-left: 3rpx;
+}

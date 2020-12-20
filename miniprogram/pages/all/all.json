@@ -1,0 +1,7 @@
+{
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "全站开团",
+    "usingComponents": {
+        "goods": "../../buyGoodsComponents/goods/goods"
+    }
+}

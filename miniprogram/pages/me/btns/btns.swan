@@ -1,0 +1,10 @@
+<view class="container">
+    <button s-for="item,index in list" bindtap="tapBtn" data-index="{{index}}" class="btn">
+        <image class="img" src="./imgs/{{index+1}}.svg"></image>
+        <view class="txt">{{item}}</view>
+    </button>
+    <button open-type="contact" class="btn">
+        <image class="img" src="./imgs/5.svg"></image>
+        <view class="txt">意见反馈</view>
+    </button>
+</view>

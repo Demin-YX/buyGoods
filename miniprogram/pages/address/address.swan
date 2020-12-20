@@ -1,0 +1,8 @@
+<view class="container">
+    <view class="title1">收货人</view>
+    <input placeholder="请输入收货人名字" class="common-back margin input_name"/>
+    <view class="title1">手机号</view>
+    <input placeholder="请输入收货手机号" type="number" class="common-back margin input_name"/>
+    <view class="title1">地址</view>
+    <input placeholder="请输入收货手机号" type="number" class="common-back margin input_name"/>
+</view>

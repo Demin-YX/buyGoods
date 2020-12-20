@@ -1,0 +1,71 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/guide/guide",
+        "pages/newed/newed",
+        "pages/message/message",
+        "pages/me/me",
+        "pages/index/index",
+        "pages/new/new",
+        "buyGoodsComponents/pop/pop",
+        "pages/new/batch/batch",
+        "pages/detail/detail",
+        "pages/address/address",
+        "pages/detail/member/member",
+        "pages/status/status",
+        "pages/dialog/dialog",
+        "pages/notification/notification",
+        "pages/purchase/purchase",
+        "pages/new/intro/intro",
+        "pages/new/batch/intro/intro",
+        "pages/iAmHost/iAmHost",
+        "pages/all/all"
+    ],
+    "usingComponents": {
+        "smt-icon": "dynamicLib://smartUI/smt-icon",
+        "smt-image-uploader": "dynamicLib://smartUI/smt-image-uploader",
+        "dividend": "./buyGoodsComponents/dividend/dividend",
+        "pop": "./buyGoodsComponents/pop/pop",
+        "line": "./buyGoodsComponents/line/line",
+        "login": "./buyGoodsComponents/login/login"
+    },
+    "window": {
+        "backgroundColor": "#fff",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6F6F6",
+        "navigationBarTitleText": "",
+        "navigationBarTextStyle": "black"
+    },
+    "dynamicLib": {
+        "smartUI": {
+            "provider": "smart-ui"
+        }
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/message/message",
+                "text": "消息",
+                "iconPath": "/images/tabBarIcon/message.png",
+                "selectedIconPath": "/images/tabBarIcon/message-se.png"
+            },
+            {
+                "pagePath": "pages/home/home",
+                "text": "主页",
+                "iconPath": "/images/tabBarIcon/home.png",
+                "selectedIconPath": "/images/tabBarIcon/home-se.png"
+            },
+            {
+                "pagePath": "pages/me/me",
+                "text": "我的",
+                "iconPath": "/images/tabBarIcon/me.png",
+                "selectedIconPath": "/images/tabBarIcon/me-se.png"
+            }
+        ],
+        "backgroundColor": "#ffffff",
+        "borderStyle": "white",
+        "color": "#d8d8d8",
+        "selectedColor": "#df141d"
+    },
+    "sitemapLocation": "sitemap.json"
+}

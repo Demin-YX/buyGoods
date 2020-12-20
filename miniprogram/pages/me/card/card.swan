@@ -1,0 +1,8 @@
+<view class="container" bindtap="tapGoods">
+    <image class="img" mode="aspectFill" src="{{img}}" />
+    <view class="txt">
+        <view class="title">{{title}}</view>
+        <view class="cont">{{cont}}</view>
+    </view>
+    <image class="right_arrow" src="./right.svg" />
+</view>

@@ -1,0 +1,249 @@
+.head {
+    align-items: center;
+    width: 700rpx;
+    justify-content: space-between;
+    padding-top: 35rpx;
+    padding-bottom: 30rpx;
+    border-bottom: #fbfbfb 2rpx solid;
+}
+
+.head_img {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+
+.host_name {
+    font-size: 42rpx;
+    font-weight: 800;
+    color: #535353;
+}
+
+.head-txt {
+    width: 570rpx;
+}
+
+.head_top {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head_bottom {
+    align-items: center;
+    justify-content: space-between;
+    color: #C8C8C8;
+    font-size: 28rpx;
+    margin-top: 2rpx;
+}
+
+.number {
+    margin-left: 20rpx;
+}
+
+.time_number {
+    align-items: center;
+}
+
+.share {
+    margin-right: 5rpx;
+}
+
+/*title*/
+.title {
+    margin-top: 20rpx;
+    font-size: 36rpx;
+    font-weight: 700;
+}
+
+.description {
+    margin-top: 20rpx;
+    font-size: 28rpx;
+    color: #6C6C6C;
+    margin-bottom: 35rpx;
+}
+
+.img {
+    width: 700rpx;
+    height: 700rpx;
+    margin-bottom: 10rpx;
+    border-radius: 15rpx;
+    box-shadow: rgba(0, 0, 0, 0.2) 2rpx 2rpx 10rpx;
+}
+
+.togeInfo {
+    align-items: center;
+    margin-top: 10rpx;
+}
+
+.person {
+    font-size: 24rpx;
+}
+
+.status {
+    align-items: center;
+    font-size: 24rpx;
+    margin-left: 20rpx;
+}
+
+/*按钮*/
+.funBtn {
+    width: 200rpx;
+    height: 110rpx;
+    border-radius: 15rpx;
+    margin: 0 5rpx;
+}
+
+.funcBtnsScroll {
+    width: 700rpx;
+}
+
+.btnTotal {
+    overflow: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 900rpx;
+    padding-top: 30rpx;
+}
+
+.noMe {
+    min-width: 700rpx;
+}
+
+.funBtnDetail {
+    position: relative;
+}
+
+.funBtnDetail:active{
+    opacity: 0.8;
+}
+
+.btnImg{
+    /* margin-right: 5rpx; */
+}
+
+.btnTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 180rpx;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.leave_title{
+    font-size: 32rpx;
+    font-weight: 800;
+}
+
+/* pop3弹窗部分的CSS属性 */
+
+.pop3_tip{
+    display: flex;
+    height: 140rpx;
+    width: 700rpx;
+    margin-bottom: 20rpx;
+    border-radius: 18rpx;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0 20rpx;
+    background-color: #f6f6f6;
+}
+
+
+.pop3_tip--index{
+    font-weight: 900;
+    font-size: 32rpx;
+    color: #CBCBCB;
+    width: 45rpx;
+}
+
+.pop3_tip--txt{
+    margin-left: 20rpx;
+}
+
+.pop3_tip--name{
+    font-size: 32rpx;
+    font-weight: 800;
+    color: #2D2D2D;
+}
+
+.pop3_tip--price{
+    font-size: 40rpx;
+    font-weight: 800;
+    color: #DD131C;
+    letter-spacing: 3rpx;
+}
+
+.pop3_tip--bar{
+    margin-left: 30rpx;
+    position: relative;
+    margin-top: 30rpx;
+}
+
+.pop3_tip--bar_background{
+    background-color: rgb(27, 33, 166, 0.1);
+    width: 290rpx;
+    border-radius: 20rpx;
+    height: 30rpx;
+}
+
+.pop3_tip--bar_data{
+    position: absolute;
+    background-color: #1D65FF;
+    border-radius: 20rpx;
+    height: 30rpx;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+}
+
+.pop3_tip--data_num{
+    position: absolute;
+    right: 0;
+    top: -45rpx;
+    font-size: 32rpx;
+    color: #1D65FF;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.minus_add{
+    display: flex;
+    align-items: center;
+    margin-left: 20rpx;
+    width: 120rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.minus_add image{
+    width: 50rpx;
+    height: 50rpx;
+    padding: 8rpx;
+}
+
+.pop_head{
+    display: flex;
+    width: 700rpx;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pop_money{
+    display: flex;
+    align-items: center;
+}
+
+.logistics{
+    justify-content: space-between;
+}
+
+.logistics:active{
+    background-color: #eee;
+}
+
+.receiving_info{
+}

@@ -1,0 +1,122 @@
+.flex {
+    display: flex;
+}
+
+.margin {
+    margin: 0 25rpx;
+}
+
+.active-opacity {
+    opacity: 1;
+}
+
+.active-opacity:active {
+    opacity: 0.5;
+}
+
+.TXT-MAX-LENGTH-300RPX {
+    max-width: 300rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.header {
+    width: 700rpx;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head_img {
+    width: 92rpx;
+    height: 92rpx;
+    border-radius: 50%;
+}
+
+.txt {
+    width: 320rpx;
+}
+
+.name_credit {
+    align-items: center;
+}
+
+.name {
+    font-size: 40rpx;
+    color: #505E77;
+}
+
+.credit {
+    align-items: center;
+    background-color: #FF6F22;
+    color: white;
+    padding: 2rpx 0;
+    padding-left: 10rpx;
+    padding-right: 13rpx;
+    border-radius: 50rpx;
+    margin-left: 10rpx;
+}
+
+.star_img {
+    width: 25rpx;
+    height: 25rpx;
+    margin-right: 5rpx;
+    margin-top: -2rpx;
+}
+
+.credit_txt {
+    font-size: 24rpx;
+}
+
+.tip_cont {
+    font-size: 20rpx;
+    color: #929292;
+}
+
+.func_btn {
+    background-color: #EEEEEE;
+    width: 242rpx;
+    height: 54rpx;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50rpx;
+    font-size: 28rpx;
+}
+
+.isMine {
+    width: 90rpx;
+    height: 35rpx;
+    font-size: 18rpx;
+    color: tomato;
+    background-color: rgb(255, 99, 71, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MinePaid {
+    width: 110rpx;
+    height: 35rpx;
+    font-size: 22rpx;
+    color: white;
+    background-color: rgb(255, 99, 71);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rpx 30rpx;
+    border-radius: 100rpx;
+}
+
+.MineUnPaid {
+    width: 110rpx;
+    height: 35rpx;
+    font-size: 22rpx;
+    color: rgb(77, 77, 77);
+    background-color: rgb(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rpx 30rpx;
+    border-radius: 100rpx;
+}

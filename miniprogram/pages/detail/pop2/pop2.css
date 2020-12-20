@@ -1,0 +1,98 @@
+/* pop2弹窗部分的CSS属性 */
+
+.pop_title{
+    color: #373737;
+    font-size: 36rpx;
+    /* margin-top: 5rpx; */
+}
+
+.pop2_tip{
+    display: flex;
+    height: 140rpx;
+    width: 700rpx;
+    margin-bottom: 20rpx;
+    border-radius: 18rpx;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0 20rpx;
+    background-color: #f6f6f6;
+}
+
+.pop2_tip--index{
+    font-weight: 900;
+    font-size: 32rpx;
+    color: #CBCBCB;
+    width: 45rpx;
+}
+
+.pop2_tip--txt{
+    margin-left: 20rpx;
+}
+
+.pop2_tip--name{
+    font-size: 32rpx;
+    font-weight: 800;
+    color: #2D2D2D;
+}
+
+.pop2_tip--price{
+    font-size: 40rpx;
+    font-weight: 800;
+    color: #DD131C;
+    letter-spacing: 3rpx;
+}
+
+.pop2_tip--bar{
+    margin-left: 30rpx;
+    position: relative;
+    margin-top: 30rpx;
+}
+
+.pop2_tip--bar_background{
+    background-color: rgb(27, 33, 166, 0.1);
+    width: 440rpx;
+    border-radius: 20rpx;
+    height: 30rpx;
+}
+
+.pop2_tip--bar_data{
+    position: absolute;
+    background-color: #1D65FF;
+    width: 220rpx;
+    border-radius: 20rpx;
+    height: 30rpx;
+    left: 0;
+    top: 0;
+}
+
+.pop2_tip--data_num{
+    position: absolute;
+    top: -45rpx;
+    right: 0;
+    font-size: 32rpx;
+    color: #1D65FF;
+    font-weight: 800;
+}
+
+.common-btn {
+    width: 700rpx;
+    height: 100rpx;
+    background-color: #414141;
+    color: white;
+    border-radius: 15rpx;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.common-btn:active {
+    background-color: #1b1b1b;
+}
+
+.TXT-MAX-LENGTH-150RPX {
+    max-width: 150rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

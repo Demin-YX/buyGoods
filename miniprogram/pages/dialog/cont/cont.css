@@ -1,0 +1,76 @@
+image{
+    background-color: #fff;
+}
+/* 总属性 */
+.msg{
+    word-break: break-all;
+}
+
+.left {
+    display: flex;
+    margin: 30rpx 0;
+}
+
+.left .head_img {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+}
+
+.left .cont_img{
+    width: 280rpx;
+    height: 280rpx;
+    border-radius: 4rpx;
+    margin-left: 20rpx;
+}
+
+.left .txt {
+    max-width: 400rpx;
+    padding: 20rpx 30rpx;
+    margin-left: 20rpx;
+    background-color: white;
+    border-radius: 4rpx;
+}
+
+.left .txt .time {
+    font-size: 26rpx;
+    color: #AEAEAE;
+    margin-top: 10rpx;
+}
+
+.right {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 30rpx 0;
+}
+
+.right .head_img {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+}
+
+.right .txt {
+    max-width: 400rpx;
+    padding: 20rpx 30rpx;
+    margin-right: 20rpx;
+    background-color: #027AFF;
+    border-radius: 4rpx;
+}
+
+.right .txt .msg {
+    color: rgba(255, 255, 255);
+}
+
+.right .txt .time {
+    font-size: 26rpx;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 10rpx;
+}
+
+.right .cont_img{
+    width: 280rpx;
+    height: 280rpx;
+    border-radius: 4rpx;
+    margin-right: 20rpx;
+}
